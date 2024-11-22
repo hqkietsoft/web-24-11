@@ -1,0 +1,174 @@
+/* Tổng thể form */
+
+.themsp {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Tiêu đề */
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+/* Định dạng bảng */
+
+#add-prd {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#add-prd td {
+    padding: 10px;
+    vertical-align: top;
+    font-size: 14px;
+    color: #555;
+}
+
+.themsp input[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.themsp input[type="reset"] {
+    margin-left: 10px;
+    background-color: rgb(180, 180, 180);
+    color: rgb(14, 3, 3);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.themsp input[type="submit"]:hover,
+.themsp input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Căn giữa các nút dưới cùng */
+
+.themsp .row form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    /* Khoảng cách giữa các nút */
+    margin-top: 20px;
+    /* Khoảng cách từ phần nhập liệu đến các nút */
+}
+
+
+/* Định dạng label */
+
+#add-prd label {
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Định dạng cho radio buttons */
+
+#add-prd input[type="radio"] {
+    margin-top: 10px;
+}
+
+
+/* Khoảng cách giữa các trường */
+
+#add-prd tr {
+    margin-bottom: 15px;
+}
+
+
+/* Định dạng phần input khi có giá trị */
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+/* Phần trái và phải */
+
+.left-column,
+.right-column {
+    width: 50%;
+    /* Chiếm 48% chiều rộng của form */
+}
+
+
+/* Định dạng các ô nhập liệu */
+
+#add-prd input[type="text"],
+#add-prd textarea,
+#add-prd select,
+#add-prd input[type="file"] {
+    width: 100%;
+    /* Các ô nhập liệu chiếm 100% chiều rộng */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+/* Cải thiện giao diện mobile */
+
+@media (max-width: 768px) {
+    .themsp {
+        width: 90%;
+        padding: 10px;
+    }
+    #add-prd td {
+        font-size: 12px;
+    }
+    #add-prd input[type="text"],
+    #add-prd textarea,
+    #add-prd select,
+    #add-prd input[type="file"] {
+        width: 100%;
+        /* Các trường nhập liệu chiếm 100% chiều rộng */
+    }
+    .left-column,
+    .right-column {
+        width: 100%;
+        /* Trên màn hình nhỏ, chia toàn bộ chiều rộng */
+    }
+    .themsp input[type="submit"],
+    .themsp input[type="reset"] {
+        width: 100%;
+        /* Nút sẽ chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+        margin: 10px 0;
+        /* Giảm khoảng cách giữa các nút */
+    }
+}
+
+
+/* Định dạng để căn giữa hai nút bấm */
+
+#add-prd tr:last-child {
+    text-align: center;
+    /* Căn giữa nội dung của dòng cuối */
+}

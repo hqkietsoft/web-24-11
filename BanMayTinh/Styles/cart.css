@@ -1,0 +1,172 @@
+/* Cấu hình chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Thiết lập cho body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 20px;
+}
+
+/* Tiêu đề trang */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    margin-top: 80px !important;
+
+}
+
+/* Nếu giỏ hàng trống */
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+}
+
+/* Bảng giỏ hàng */
+table {
+    width: 80%; /* Đặt chiều rộng của bảng là 80% so với chiều rộng của trang */
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa của bảng */
+    border-collapse: collapse;
+    margin: 0 auto 20px auto; /* Căn giữa bảng và tạo khoảng cách dưới bảng */
+    background-color: #fff;
+    border: 1px solid #6d0303;
+}
+th,td {
+    border: 1px solid #6d0303;
+    border-collapse: collapse;
+}
+
+/* Tiêu đề các cột trong bảng */
+th {
+    background-color: #c92017;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Các ô trong bảng */
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #870303;
+}
+
+/* Hình ảnh sản phẩm */
+td img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Định dạng input nhập số lượng */
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Tổng cộng */
+p strong {
+    font-size: 24px;
+    color: #6d0303;
+    font-weight: bold; /* In đậm */
+    margin-bottom: 20px; /* Thêm khoảng cách dưới */
+}
+
+/* Tách tổng cộng ra khỏi các phần khác */
+p {
+    text-align: center;
+    font-size: 24px;
+    color: #160000;
+    margin-top: 30px; /* Tạo khoảng cách giữa phần tổng cộng và các phần khác */
+}
+
+
+/* Nút Cập nhật giỏ hàng */
+button {
+    background-color: #1f61e7; /* Màu đỏ */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 16px !important;
+}
+
+button:hover {
+    background-color: #160880; /* Màu đỏ đậm */
+}
+
+/* Liên kết xóa sản phẩm */
+a {
+    color: #c92014;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 20px; /* Thêm khoảng cách phía trên nếu cần */
+}
+
+/* Nút Thanh toán */
+.container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f44336; /* Màu đỏ */
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.container a:hover {
+    background-color: #941412; /* Màu đỏ đậm */
+}
+
+
+/* Căn giữa các nút trong form */
+form {
+    text-align: center; /* Căn giữa các phần tử trong form */
+}
+
+/* Tạo khoảng cách giữa các nút trong form */
+form button, form a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Thêm khoảng cách cho bảng giỏ hàng */
+table {
+    margin: 0 auto;
+}
+
+/* Thêm khoảng cách giữa các phần tử */
+td, th {
+    padding: 15px;
+}
+
+footer{
+    margin-top: 200px;
+}

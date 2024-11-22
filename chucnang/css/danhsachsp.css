@@ -1,0 +1,137 @@
+/* Khung chứa các sản phẩm */
+
+.prd-block {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+
+/* Tiêu đề danh mục sản phẩm */
+
+.prd-block h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Danh sách sản phẩm */
+
+.pr-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+/* Mỗi sản phẩm */
+
+.prd-item {
+    width: 30%;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prd-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Hình ảnh sản phẩm */
+
+.prd-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Tiêu đề sản phẩm */
+
+.prd-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.prd-item h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.prd-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+
+/* Giá sản phẩm */
+
+.price {
+    font-size: 16px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+
+/* Phân trang */
+
+#pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#pagination a,
+#pagination span {
+    padding: 10px 15px;
+    margin: 0 5px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#pagination a:hover {
+    background-color: #2980b9;
+}
+
+#pagination .active a {
+    background-color: #2ecc71;
+    cursor: default;
+}
+
+#pagination a:focus {
+    outline: none;
+}
+
+
+/* Liên kết phân trang đầu, cuối */
+
+#pagination a:first-child,
+#pagination a:last-child {
+    background-color: #16a085;
+}
+
+#pagination a:first-child:hover,
+#pagination a:last-child:hover {
+    background-color: #1abc9c;
+}
+
+
+/* Clear các phần tử sau khi hiển thị */
+
+.clear {
+    clear: both;
+}

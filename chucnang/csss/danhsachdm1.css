@@ -1,0 +1,173 @@
+/* Tổng thể giao diện */
+
+.danhsachdm {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Tiêu đề */
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+/* Định dạng cho bảng */
+
+#dms {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+/* Định dạng dòng tiêu đề bảng */
+
+#dm-bar {
+    background-color: #2096ea;
+    color: white;
+}
+
+#dm-bar td {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Định dạng các ô trong bảng */
+
+#dms td {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #1c0909;
+    border: 1px solid #ddd;
+}
+
+
+/* Định dạng các liên kết trong bảng */
+
+#dms a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#dms a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+/* Định dạng cho phần thêm danh mục mới */
+
+#add-dm {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#add-dm a {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#add-dm a:hover {
+    background-color: #45a049;
+}
+
+
+/* Phân trang */
+
+
+/* Định dạng phân trang */
+
+.pagination {
+    display: inline-block;
+    margin: 20px 0;
+    text-align: right;
+    /* Đưa phân trang sang bên phải */
+    width: 100%;
+    /* Đảm bảo phân trang chiếm toàn bộ chiều rộng của phần tử cha */
+}
+
+
+/* Định dạng cho mỗi trang */
+
+.pagination li {
+    display: inline;
+    margin: 0 2px;
+}
+
+
+/* Định dạng cho các liên kết phân trang */
+
+.pagination li a {
+    color: #007bff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Định dạng khi hover vào liên kết */
+
+.pagination li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+
+/* Định dạng cho trang đang được chọn */
+
+.pagination li.active a {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    font-weight: bold;
+}
+
+
+/* Định dạng cho liên kết phân trang bị vô hiệu hóa (trang đầu và cuối) */
+
+.pagination li.disabled a {
+    color: #ccc;
+    pointer-events: none;
+    background-color: #f0f0f0;
+    border-color: #ccc;
+}
+
+
+/* Cải thiện giao diện trên màn hình nhỏ */
+
+@media (max-width: 768px) {
+    .danhsachdm {
+        padding: 10px;
+    }
+    #dms td {
+        font-size: 12px;
+        padding: 8px;
+    }
+    #add-dm a {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #pagination a {
+        padding: 6px 12px;
+    }
+}
